@@ -1,5 +1,6 @@
 use iced_core::keyboard::{Key, Modifiers};
 use std::fmt;
+use strum_macros::EnumString;
 
 /// Represents the modifier keys on a keyboard.
 ///
@@ -8,7 +9,7 @@ use std::fmt;
 /// * `Ctrl`: Represents the Control key.
 /// * `Alt`: Represents the Alt key.
 /// * `Shift`: Represents the Shift key.
-#[derive(Clone, Copy, Debug, Eq, Hash, Ord, PartialEq, PartialOrd)]
+#[derive(Clone, Copy, Debug, Eq, Hash, Ord, PartialEq, PartialOrd, EnumString)]
 pub enum Modifier {
     Super,
     Ctrl,
